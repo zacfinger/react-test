@@ -15,7 +15,7 @@
     "docs": "node ./scripts/server.js",
     "size": "echo $(gzip -c index.min.js | wc -c) bytes",
     "start": "jest --coverage --watch",
-    "pretest": "npx prettier --write readme.md src",
+    "pretest": "ls && npx prettier --write readme.md src",
     "test": "jest --coverage --detectOpenHandles"
   },
   "keywords": [
