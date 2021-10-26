@@ -30,7 +30,7 @@ A simple controlled input:
 ```js
 const Input = () => {
   const [text, setText] = useState("");
-  return <input value={text} onChange={e => setText(e.target.value)} />;
+  return <input value={text} onChange={(e) => setText(e.target.value)} />;
 };
 
 const $input = $(<Input />);
@@ -47,7 +47,7 @@ const Greeter = () => {
   return (
     <div>
       Hello {name || "Anonymous"}
-      <input value={name} onChange={e => setName(e.target.value)} />
+      <input value={name} onChange={(e) => setName(e.target.value)} />
     </div>
   );
 };

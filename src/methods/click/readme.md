@@ -43,7 +43,7 @@ We can submit a form by clicking on a button inside it:
 ```js
 const CreateUser = ({ onSubmit }) => (
   <form
-    onSubmit={e => {
+    onSubmit={(e) => {
       e.preventDefault(); // <- this is required _when testing_
       onSubmit();
     }}

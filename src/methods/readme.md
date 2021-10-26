@@ -18,7 +18,7 @@ const Greeter = () => {
   return (
     <div>
       Hello {name || "Anonymous"}
-      <input onChange={e => setName(e.target.value)} />
+      <input onChange={(e) => setName(e.target.value)} />
     </div>
   );
 };

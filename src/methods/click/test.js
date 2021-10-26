@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import $ from "../../";
 import "babel-polyfill";
 
-const delay = time => new Promise(done => setTimeout(done, time));
+const delay = (time) => new Promise((done) => setTimeout(done, time));
 
 describe(".click()", () => {
   it("can attach and click on children", async () => {
@@ -21,7 +21,7 @@ describe(".click()", () => {
     const mock = jest.fn();
     const $form = $(
       <form
-        onSubmit={e => {
+        onSubmit={(e) => {
           e.preventDefault();
           mock();
         }}
